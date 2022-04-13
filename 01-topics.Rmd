@@ -1,0 +1,26 @@
+# Topics 
+
+I will accept thesis students whose projects fall within the scope of one or more standing committee of the Transportation Research Board. You can search for standing committees [here](https://www.mytrb.org/OnlineDirectory/Committee/){target="_blank"} (check the box for “Standing Committee” under the Committee Type heading). 
+
+Standing committees with scopes that may be of particular interest to UPD students are:
+
+* [ACH10: Standing Committee on Pedestrians](https://www.mytrb.org/OnlineDirectory/Committee/Details/5158){target="_blank"}
+* [ACH20: Standing Committee on Bicycle Transportation](https://www.mytrb.org/OnlineDirectory/Committee/Details/5093){target="_blank"}
+* [AED10: Standing Committee on Statewide/National Transportatoin Data and Information Systems](https://www.mytrb.org/OnlineDirectory/Committee/Details/5147){target="_blank"}
+* [AED20: Standing Committee on Urban Transportation Data and Information Systems](https://www.mytrb.org/OnlineDirectory/Committee/Details/5226){target="_blank"}
+* [AED40: Standing Committee on Geographic Information Science](https://www.mytrb.org/OnlineDirectory/Committee/Details/5139){target="_blank"}
+* [AED80: Standing Committee on Visualization in Transportation](https://www.mytrb.org/OnlineDirectory/Committee/Details/5113)
+* [AEP10: Standing Committee on Transportation Planning Policy and Processes](https://www.mytrb.org/OnlineDirectory/Committee/Details/5127)
+* [AEP30: Standing Committee on Travel Behavior and Values](https://www.mytrb.org/OnlineDirectory/Committee/Details/5209)
+* [AEP70: Standing Committee on Environmental Analysis and Ecology](https://www.mytrb.org/OnlineDirectory/Committee/Details/5176)
+* [AME10: Standing Committee on Equity in Transportation](https://www.mytrb.org/OnlineDirectory/Committee/Details/5143)
+* [AME20: Standing Committee on Women and Gender in Transportation](https://www.mytrb.org/OnlineDirectory/Committee/Details/5162)
+* [AME30: Standing Committee on Native American Transportation Issues](https://www.mytrb.org/OnlineDirectory/Committee/Details/5112)
+* [AME30: Standing Committee on Transportation in the Developing Countries](https://www.mytrb.org/OnlineDirectory/Committee/Details/5114)
+* [AME50: Standing Committee on Accessible Transportation and Mobility](https://www.mytrb.org/OnlineDirectory/Committee/Details/5123)
+* [AME60: Standing Committee on Historic and Archeological Preservation in Transportation](https://www.mytrb.org/OnlineDirectory/Committee/Details/5205)
+* [AME70: Standing Committee on Transportation and Public Health](https://www.mytrb.org/OnlineDirectory/Committee/Details/5200)
+* [AP025: Standing Committee on Public Transportation Planning and Development](https://www.mytrb.org/OnlineDirectory/Committee/Details/1152)
+* [AP050: Standing Committee on Bus Transit Systems](https://www.mytrb.org/OnlineDirectory/Committee/Details/6305)
+* [AP065: Standing Committee on Urban Rail Transit Systems](https://www.mytrb.org/OnlineDirectory/Committee/Details/1154)
+* [AP090: Standing Committee on Transit Data](https://www.mytrb.org/OnlineDirectory/Committee/Details/6433)

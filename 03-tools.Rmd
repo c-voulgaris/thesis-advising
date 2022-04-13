@@ -1,0 +1,5 @@
+# Software tools
+
+You should draft your thesis in RStudio using the bookdown package (which was also used to produce this document). This will allow you to generate a PDF document in addition to an HTML-based ebook that can include interactive elements. I will share a template with you that you can use as as starting point.
+
+You should maintain all code used to produce your thesis (both the document and the analysis) in a GitHub repository. I will offer feedback and suggest edits using GitHub issues and pull requests.
