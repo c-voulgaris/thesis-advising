@@ -1,5 +1,14 @@
 # Software tools
 
-You should draft your thesis in RStudio using the bookdown package (which was also used to produce this document). This will allow you to generate a PDF document in addition to an HTML-based ebook that can include interactive elements. I will share a template with you that you can use as as starting point.
+You should draft your thesis in RStudio using the bookdown package (which was also used to produce this document). This will allow you to generate a PDF document in addition to an HTML-based ebook that can include interactive elements. @xie2016bookdown includes full documentation for the bookdown package, and you can access it freely online [here](https://bookdown.org/yihui/bookdown/){target="_blank"}.
 
-You should maintain all code used to produce your thesis (both the document and the analysis) in a GitHub repository. I will offer feedback and suggest edits using GitHub issues and pull requests.
+You should maintain all code used to produce your thesis (both the document and any analysis) in a GitHub repository. I will offer feedback and suggest edits using GitHub issues and pull requests.
+
+To set up your thesis as a bookdown document within a GitHub repository, take the following steps:
+
+1. Create a new RStudio project by selecting "New project" from the File menu in RStudio, then "New Directory", the "Book project using bookdown." Name your project directory something descriptive that pertains to your thesis topic (i.e. do not name it "thesis").
+2. Install the `usethis` package, if it isn't already installed, then type `usethis::use_git()` in your RStudio console. Next, type `usethis::use_github()` in your console. This will create a local Git repository and an associated GitHub repository from your RStudio project.
+3. Open the file _bookdown.yml and add a line that says `output_dir: "docs"` at the end.
+4. In the Build tab of RStudio, click "Build Book."
+5. Go the the Git tab of RStudio. Stage, Commit, and Push your changes.
+6. Navigate to your GitHub repo on your web browser. Go to settings, then select "Pages" from the left sidebar. Under the "Source" heading, set the Branch as "main" and the folder as "/docs". Then click Save.

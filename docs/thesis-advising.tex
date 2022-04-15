@@ -1,50 +1,54 @@
-% Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode}{hyperref}
-\PassOptionsToPackage{hyphens}{url}
-%
-\documentclass[
-]{book}
-\title{Expectations for thesis students}
-\author{Carole Turley Voulgaris}
-\date{2022-04-14}
+\documentclass[]{tufte-book}
 
-\usepackage{amsmath,amssymb}
-\usepackage{lmodern}
-\usepackage{iftex}
-\ifPDFTeX
+% ams
+\usepackage{amssymb,amsmath}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
-  \usepackage{unicode-math}
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\else % if luatex or xelatex
+  \makeatletter
+  \@ifpackageloaded{fontspec}{}{\usepackage{fontspec}}
+  \makeatother
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \makeatletter
+  \@ifpackageloaded{soul}{
+     \renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+     \renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+   }{}
+  \makeatother
+
 \fi
-% Use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
-\usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={Expectations for thesis students},
-  pdfauthor={Carole Turley Voulgaris},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
+
+% graphix
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+
+% booktabs
+\usepackage{booktabs}
+
+% url
+\usepackage{url}
+
+% hyperref
+\usepackage{hyperref}
+
+% units.
+\usepackage{units}
+
+
+\setcounter{secnumdepth}{2}
+
+% citations
+\usepackage{natbib}
+\bibliographystyle{apalike}
+
+
+% pandoc syntax highlighting
+
+% table with pandoc
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -55,23 +59,26 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-% Set default figure placement to htbp
-\makeatletter
-\def\fps@figure{htbp}
-\makeatother
-\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+% multiplecol
+\usepackage{multicol}
+
+% strikeout
+\usepackage[normalem]{ulem}
+
+% morefloats
+\usepackage{morefloats}
+
+
+% tightlist macro required by pandoc >= 1.14
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
+
+% title / author / date
+\title{Expectations for thesis students}
+\author{Carole Turley Voulgaris}
+\date{2022-04-15}
+
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -80,19 +87,18 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
-\usepackage[]{natbib}
-\bibliographystyle{apalike}
 
 \begin{document}
+
 \maketitle
+
+
 
 {
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+
 \hypertarget{introduction}{%
 \chapter{Introduction}\label{introduction}}
 
@@ -112,41 +118,25 @@ Standing committees with scopes that may be of particular interest to UPD studen
 \item
   \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5093}{ACH20: Standing Committee on Bicycle Transportation}
 \item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5147}{AED10: Standing Committee on Statewide/National Transportatoin Data and Information Systems}
-\item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5226}{AED20: Standing Committee on Urban Transportation Data and Information Systems}
-\item
   \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5139}{AED40: Standing Committee on Geographic Information Science}
-\item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5113}{AED80: Standing Committee on Visualization in Transportation}
 \item
   \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5127}{AEP10: Standing Committee on Transportation Planning Policy and Processes}
 \item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5209}{AEP30: Standing Committee on Travel Behavior and Values}
+  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5128}{AEP10: Standing Committee on Transportation Planning Analysis and Application}
 \item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5176}{AEP70: Standing Committee on Environmental Analysis and Ecology}
+  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5209}{AEP30: Standing Committee on Travel Behavior and Values}
 \item
   \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5143}{AME10: Standing Committee on Equity in Transportation}
 \item
   \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5162}{AME20: Standing Committee on Women and Gender in Transportation}
 \item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5112}{AME30: Standing Committee on Native American Transportation Issues}
-\item
   \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5114}{AME30: Standing Committee on Transportation in the Developing Countries}
 \item
   \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5123}{AME50: Standing Committee on Accessible Transportation and Mobility}
 \item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5205}{AME60: Standing Committee on Historic and Archeological Preservation in Transportation}
-\item
   \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/5200}{AME70: Standing Committee on Transportation and Public Health}
 \item
   \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/1152}{AP025: Standing Committee on Public Transportation Planning and Development}
-\item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/6305}{AP050: Standing Committee on Bus Transit Systems}
-\item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/1154}{AP065: Standing Committee on Urban Rail Transit Systems}
-\item
-  \href{https://www.mytrb.org/OnlineDirectory/Committee/Details/6433}{AP090: Standing Committee on Transit Data}
 \end{itemize}
 
 \hypertarget{thesis-format}{%
@@ -154,51 +144,57 @@ Standing committees with scopes that may be of particular interest to UPD studen
 
 I will advise students who will produce a written thesis. There is no minimum page or word count. My preference is for you to write as succinctly as possible while fully describing your project.
 
-Your thesis should be organized into the following chapters. The chapters do not need to have these names, but they should serve the functional purpose described below.
+Your thesis should be organized into the following chapters. The chapters do not need to have these names, but they should serve the functional purpose described below. This is the order in which the chapters should appear in your final thesis; it is not the order in which you should write them. Refer to the \protect\hyperlink{key-dates}{Key dates} section for the order in which you should draft your thesis chapters.
 
-\hypertarget{introduction-1}{%
-\section{Introduction}\label{introduction-1}}
-
-The introduction should clearly state a research question, briefly explain why the question is important, and summarize the answer to that question. It should also breifly summarize each of the subsequent chapters.
-
-\hypertarget{literature-review}{%
-\section{Literature review}\label{literature-review}}
-
-The literature should summarize prior research that has been done by other scholars that relates to your research question. The purpose of this summary is for the reader to place your research findings in the proper context.
-
-\hypertarget{methods}{%
-\section{Methods}\label{methods}}
-
-The methods chapter should describe your research approach in enough detail that an interested and motivated reader could replicate your work. Some details (for example, survey instruments or raw datasets) might need to included by reference to an appendix.
-
-\hypertarget{results}{%
-\section{Results}\label{results}}
-
-The results chapter should summarize the results of your analysis.
-
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
-
-The discussion chapter should relate the results back to the literature you've summarized in your literature review chapter. There will be strong parallels between the discussion chapter and the literature review chapter.
-
-\hypertarget{conclusion}{%
-\section{Conclusion}\label{conclusion}}
-
-The conclusion chapter should summarize the rest of your thesis and will have strong parallels with the introduction. A reader should be able to understand your overall argument and the support for it by reading only the introduction and conclusion.
+\begin{itemize}
+\item
+  \emph{Introduction:} The introduction should clearly state a research question, briefly explain why the question is important, and summarize the answer to that question. It should also briefly summarize each of the subsequent chapters.
+\item
+  \emph{Literature review:} The literature should summarize prior research that has been done by other scholars that relates to your research question. The purpose of this summary is for the reader to place your research findings in the proper context.
+\item
+  \emph{Methods:} The methods chapter should describe your research approach in enough detail that an interested and motivated reader could replicate your work. You may need to include some details (for example, survey instruments or raw datasets) in an appendix that you would reference in this chapter.
+\item
+  \emph{Results:} The results chapter should summarize the results of your analysis.
+\item
+  \emph{Discussion:} The discussion chapter should relate the results back to the literature you've summarized in your literature review chapter. There will be strong parallels between the discussion chapter and the literature review chapter.
+\item
+  \emph{Conclusion:} The conclusion chapter should summarize all of the preceding chapters, with an emphasis on the results and discussion. It will have strong parallels with the introduction. A reader should be able to understand your overall argument and the support for it by reading only the introduction and conclusion.
+\end{itemize}
 
 \hypertarget{software-tools}{%
 \chapter{Software tools}\label{software-tools}}
 
-You should draft your thesis in RStudio using the bookdown package (which was also used to produce this document). This will allow you to generate a PDF document in addition to an HTML-based ebook that can include interactive elements. I will share a template with you that you can use as as starting point.
+You should draft your thesis in RStudio using the bookdown package (which was also used to produce this document). This will allow you to generate a PDF document in addition to an HTML-based ebook that can include interactive elements. \citet{xie2016bookdown} includes full documentation for the bookdown package, and you can access it freely online \href{https://bookdown.org/yihui/bookdown/}{here}.
 
-You should maintain all code used to produce your thesis (both the document and the analysis) in a GitHub repository. I will offer feedback and suggest edits using GitHub issues and pull requests.
+You should maintain all code used to produce your thesis (both the document and any analysis) in a GitHub repository. I will offer feedback and suggest edits using GitHub issues and pull requests.
+
+To set up your thesis as a bookdown document within a GitHub repository, take the following steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Create a new RStudio project by selecting ``New project'' from the File menu in RStudio, then ``New Directory'', the ``Book project using bookdown.'' Name your project directory something descriptive that pertains to your thesis topic (i.e.~do not name it ``thesis'').
+\item
+  Install the \texttt{usethis} package, if it isn't already installed, then type \texttt{usethis::use\_git()} in your RStudio console. Next, type \texttt{usethis::use\_github()} in your console. This will create a local Git repository and an associated GitHub repository from your RStudio project.
+\item
+  Open the file \_bookdown.yml and add a line that says \texttt{output\_dir:\ "docs"} at the end.
+\item
+  In the Build tab of RStudio, click ``Build Book.''
+\item
+  Go the the Git tab of RStudio. Stage, Commit, and Push your changes.
+\item
+  Navigate to your GitHub repo on your web browser. Go to settings, then select ``Pages'' from the left sidebar. Under the ``Source'' heading, set the Branch as ``main'' and the folder as ``/docs''. Then click Save.
+\end{enumerate}
 
 \hypertarget{advising-meetings}{%
 \chapter{Advising meetings}\label{advising-meetings}}
 
-I will meet with the thesis students I am advising as a group on a biweekly basis throughout Fall and Spring semesters of the thesis year. Students should come to these meetings prepared to share their progress.
+I will meet with the thesis students I am advising as a group (if I am advising multiple students) on a biweekly basis throughout Fall and Spring semesters of the thesis year. At the beginning of each semester, we will coordinate as a group to find a mutually convenient time for these recurring meetings.
 
-I will meet with students individually as needed.
+Students should come to these meeting prepared to share their progress using two or three slides. These can be very simple. Preparation for these advising meetings should contribute to your progress on your thesis rather than being an additional task that comes at the expense of such progress.
+
+I am also available to meet with students outside of these regular advising meetings. You can sign up for a meeting with me using my \href{https://carole-voulgaris.youcanbook.me/}{office hours scheduler}.
 
 \hypertarget{key-dates}{%
 \chapter{Key dates}\label{key-dates}}
@@ -208,80 +204,47 @@ This section describes tasks you should complete as part of your thesis work wit
 \hypertarget{summer-before-thesis-year}{%
 \section{Summer before thesis year}\label{summer-before-thesis-year}}
 
-\hypertarget{reading-to-prepare-you-for-writing}{%
-\subsection{Reading to prepare you for writing}\label{reading-to-prepare-you-for-writing}}
+The most important task for you to complete during the summer is to define a preliminary research question. You will have time to refine this question in the thesis prep course. You may find Chapter Three of The Craft of Research \citep{booth_chapter_2016} to useful in thnking about what makes a useful research question.
 
-During the summer before your thesis year, you should read the following books:
+I would also like you take some time over the summer to read \emph{How to Fix Your Academic Writing Trouble} \citep{mewburn2018ebook}. This is a very good introduction to academic writing. Even if you are a very good writer with extensive academic writing experience, I would like you to read this entire book so that we'll have a common foundation on which to build when I give you feedback on your writing.
 
-\emph{How to Fix Your Academic Writing Trouble} \citep{mewburn2018ebook}. This is a very good introduction to academic writing. Even if you are a very good writer with extensive academic writing experience, I would like you to read this entire book so that we'll have a common foundation on which to build when I give you feedback on your writing.
+You should set up the GitHub repository with a bookdown template for your thesis and start getting comfortable editing documents in bookdown. You can find instructions on setting up your GitHub repository in the the \protect\hyperlink{software-tools}{Software tools} section of this document.
 
-\emph{Bookdown: authoring books and technical documents with R markdown} \citep{xie2016bookdown}, This is a reference on how to use the bookdown package. You can read it for free \href{https://bookdown.org/yihui/bookdown/}{here}. You do not need to read it cover to cover, but I want you to look through it so that you're well prepared to use it as a reference.
+Start assembling some initial sources for your literature review. Find at least five journal articles that are relevant to the research question you've identified and add them to the book.bib file in your thesis GitHub repository.
 
-\hypertarget{setting-up-a-github-repository}{%
-\subsection{Setting up a GitHub repository}\label{setting-up-a-github-repository}}
-
-Over the summer, use the template I will provide you to set up a GitHub repository for your thesis. Name the repository something that describes your topic (i.e.~don't call it ``Thesis''). Add me to your repository as a collaborator.
-
-\hypertarget{tasks-specific-to-your-research-topic}{%
-\subsection{Tasks specific to your research topic}\label{tasks-specific-to-your-research-topic}}
-
-There are two project-specific tasks you should complete during the summer before your thesis year:
-
-\hypertarget{define-your-research-question}{%
-\subsubsection{Define your research question}\label{define-your-research-question}}
-
-Prior to our first meeting in the fall, you should develop a specific question you would like to answer through your research. You will have time to refine this question in the thesis prep course. You may find Chapter Three of The Craft of Research \citep{booth_chapter_2016} to useful in thnking about what makes a useful research question.
-
-\hypertarget{assemble-some-inital-sources}{%
-\subsubsection{Assemble some inital sources}\label{assemble-some-inital-sources}}
-
-Find at least five journal articles that are relevant to the research question you've identified and add them to the book.bib file in your thesis GitHub repository.
+Depending on your project, you may want to start gathering and analyzing some preliminary data the summer before your thesis year
 
 \hypertarget{fall-of-your-thesis-year}{%
 \section{Fall of your thesis year}\label{fall-of-your-thesis-year}}
 
-Over the course of fall semester, you will develop a thesis proposal as part of the thesis prep course. Much of the material you write for your thesis proposal can be incorporated into your thesis. You should add that material to the thesis draft in your GitHub repository as you go along.
-
-\hypertarget{methods-chapter}{%
-\subsection{Methods chapter}\label{methods-chapter}}
+Over the course of fall semester, you will develop a \textbf{thesis proposal} as part of the thesis prep course. Much of the material you write for your thesis proposal can be incorporated into your thesis. You should add that material to the thesis draft in your GitHub repository as you go along.
 
 Before the start of Spring semester, you should write a complete draft of the the \textbf{methods chapter} of your thesis and complete any necessary IRB applications.
+
+It would be wise to begin gathering and analyzing data during the fall semester. You don't need to wait until the end of thesis prep to start your research work.
 
 \hypertarget{spring-of-your-thesis-year}{%
 \section{Spring of your thesis year}\label{spring-of-your-thesis-year}}
 
-In general, you should give me at least one week to review each chapter of your thesis.
+You will start spring semester having drafted your methods chapter. You will write most of your thesis during spring semester. In general, you should give me at least one week to review each chapter of your thesis.
 
-\hypertarget{results-chapter}{%
-\subsection{Results chapter}\label{results-chapter}}
+\begin{itemize}
+\item
+  \textbf{At least one week before the Spring semester midterm review} (about ten weeks before the final thesis review), submit a draft of the results chapter to me.
+\item
+  \textbf{At least eight weeks before the final thesis review,} submit a draft of the discussion chapter to me.
+\item
+  \textbf{At least six weeks before the final thesis review,} submit a draft of the literature review chapter to me.
+\item
+  \textbf{At least four weeks before the final thesis review,} submit a conclusion chapter to me.
+\item
+  \textbf{At least two weeks before the final thesis review,} submit an introduction chapter to me.
+\item
+  \textbf{At least one week before the final thesis review,} submit a complete draft to me.
+\end{itemize}
 
-Submit a draft of the results chapter to me \textbf{at least one week before the Spring semester midterm review} (about ten weeks before the final thesis review).
+\bibliography{book.bib,packages.bib}
 
-\hypertarget{discussion-chapter}{%
-\subsection{Discussion chapter}\label{discussion-chapter}}
 
-Submit a draft of the discussion chapter to me at least eight weeks before the final thesis review.
-
-\hypertarget{literature-review-chapter}{%
-\subsection{Literature review chapter}\label{literature-review-chapter}}
-
-Submit a draft of the literatire review chapter to me at least six weeks before the final thesis review.
-
-\hypertarget{conclusion-chapter}{%
-\subsection{Conclusion chapter}\label{conclusion-chapter}}
-
-Submit a conclusion chapter to me at least four weeks before the final thesis review.
-
-\hypertarget{introduction-chapter}{%
-\subsection{Introduction chapter}\label{introduction-chapter}}
-
-Submit an introduction chapter to me at least two weeks before the final thesis review.
-
-\hypertarget{complete-draft}{%
-\subsection{Complete draft}\label{complete-draft}}
-
-Submit a complete draft to me at least one week before the final thesis review.
-
-  \bibliography{book.bib,packages.bib}
 
 \end{document}

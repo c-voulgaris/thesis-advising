@@ -2,27 +2,16 @@
 
 I will advise students who will produce a written thesis. There is no minimum page or word count. My preference is for you to write as succinctly as possible while fully describing your project.
 
-Your thesis should be organized into the following chapters. The chapters do not need to have these names, but they should serve the functional purpose described below.
+Your thesis should be organized into the following chapters. The chapters do not need to have these names, but they should serve the functional purpose described below. This is the order in which the chapters should appear in your final thesis; it is not the order in which you should write them. Refer to the [Key dates](#key-dates) section for the order in which you should draft your thesis chapters.
 
-## Introduction
+* *Introduction:* The introduction should clearly state a research question, briefly explain why the question is important, and summarize the answer to that question. It should also briefly summarize each of the subsequent chapters.
 
-The introduction should clearly state a research question, briefly explain why the question is important, and summarize the answer to that question. It should also breifly summarize each of the subsequent chapters.
+* *Literature review:* The literature should summarize prior research that has been done by other scholars that relates to your research question. The purpose of this summary is for the reader to place your research findings in the proper context.
 
-## Literature review
+* *Methods:* The methods chapter should describe your research approach in enough detail that an interested and motivated reader could replicate your work. You may need to include some details (for example, survey instruments or raw datasets) in an appendix that you would reference in this chapter.
 
-The literature should summarize prior research that has been done by other scholars that relates to your research question. The purpose of this summary is for the reader to place your research findings in the proper context.
+* *Results:* The results chapter should summarize the results of your analysis.
 
-## Methods
+* *Discussion:* The discussion chapter should relate the results back to the literature you've summarized in your literature review chapter. There will be strong parallels between the discussion chapter and the literature review chapter.
 
-The methods chapter should describe your research approach in enough detail that an interested and motivated reader could replicate your work. Some details (for example, survey instruments or raw datasets) might need to included by reference to an appendix.
-
-## Results
-
-The results chapter should summarize the results of your analysis.
-
-## Discussion
-
-The discussion chapter should relate the results back to the literature you've summarized in your literature review chapter. There will be strong parallels between the discussion chapter and the literature review chapter.
-
-## Conclusion
-The conclusion chapter should summarize the rest of your thesis and will have strong parallels with the introduction. A reader should be able to understand your overall argument and the support for it by reading only the introduction and conclusion.
+* *Conclusion:* The conclusion chapter should summarize all of the preceding chapters, with an emphasis on the results and discussion. It will have strong parallels with the introduction. A reader should be able to understand your overall argument and the support for it by reading only the introduction and conclusion.
