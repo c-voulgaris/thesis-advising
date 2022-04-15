@@ -1,0 +1,137 @@
+--- 
+title: "Expectations for thesis students"
+author: "Carole Turley Voulgaris"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::tufte_html_book
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Introduction
+
+Theses at the GSD and in the UPD department can address a variety of topics, can take many different forms, and can be developed using many different processes. My expectations for the students I advise are quite a bit narrower. The purpose of this document is to clearly articulate those expectations so that students can make an informed choice about whether I would be an appropriate thesis advisor, based on their own goals for their thesis.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Topics 
+
+I will accept thesis students whose projects fall within the scope of one or more standing committee of the Transportation Research Board. You can search for standing committees [here](https://www.mytrb.org/OnlineDirectory/Committee/){target="_blank"} (check the box for “Standing Committee” under the Committee Type heading). 
+
+Standing committees with scopes that may be of particular interest to UPD students are:
+
+* [ACH10: Standing Committee on Pedestrians](https://www.mytrb.org/OnlineDirectory/Committee/Details/5158){target="_blank"}
+* [ACH20: Standing Committee on Bicycle Transportation](https://www.mytrb.org/OnlineDirectory/Committee/Details/5093){target="_blank"}
+* [AED40: Standing Committee on Geographic Information Science](https://www.mytrb.org/OnlineDirectory/Committee/Details/5139){target="_blank"}
+* [AEP10: Standing Committee on Transportation Planning Policy and Processes](https://www.mytrb.org/OnlineDirectory/Committee/Details/5127){target="_blank"}
+* [AEP10: Standing Committee on Transportation Planning Analysis and Application](https://www.mytrb.org/OnlineDirectory/Committee/Details/5128){target="_blank"}
+* [AEP30: Standing Committee on Travel Behavior and Values](https://www.mytrb.org/OnlineDirectory/Committee/Details/5209){target="_blank"}
+* [AME10: Standing Committee on Equity in Transportation](https://www.mytrb.org/OnlineDirectory/Committee/Details/5143){target="_blank"}
+* [AME20: Standing Committee on Women and Gender in Transportation](https://www.mytrb.org/OnlineDirectory/Committee/Details/5162){target="_blank"}
+* [AME30: Standing Committee on Transportation in the Developing Countries](https://www.mytrb.org/OnlineDirectory/Committee/Details/5114){target="_blank"}
+* [AME50: Standing Committee on Accessible Transportation and Mobility](https://www.mytrb.org/OnlineDirectory/Committee/Details/5123){target="_blank"}
+* [AME70: Standing Committee on Transportation and Public Health](https://www.mytrb.org/OnlineDirectory/Committee/Details/5200){target="_blank"}
+* [AP025: Standing Committee on Public Transportation Planning and Development](https://www.mytrb.org/OnlineDirectory/Committee/Details/1152){target="_blank"}
+
+<!--chapter:end:01-topics.Rmd-->
+
+# Thesis format
+
+I will advise students who will produce a written thesis. There is no minimum page or word count. My preference is for you to write as succinctly as possible while fully describing your project.
+
+Your thesis should be organized into the following chapters. The chapters do not need to have these names, but they should serve the functional purpose described below. This is the order in which the chapters should appear in your final thesis; it is not the order in which you should write them. Refer to the [Key dates](#key-dates) section for the order in which you should draft your thesis chapters.
+
+* *Introduction:* The introduction should clearly state a research question, briefly explain why the question is important, and summarize the answer to that question. It should also briefly summarize each of the subsequent chapters.
+
+* *Literature review:* The literature should summarize prior research that has been done by other scholars that relates to your research question. The purpose of this summary is for the reader to place your research findings in the proper context.
+
+* *Methods:* The methods chapter should describe your research approach in enough detail that an interested and motivated reader could replicate your work. You may need to include some details (for example, survey instruments or raw datasets) in an appendix that you would reference in this chapter.
+
+* *Results:* The results chapter should summarize the results of your analysis.
+
+* *Discussion:* The discussion chapter should relate the results back to the literature you've summarized in your literature review chapter. There will be strong parallels between the discussion chapter and the literature review chapter.
+
+* *Conclusion:* The conclusion chapter should summarize all of the preceding chapters, with an emphasis on the results and discussion. It will have strong parallels with the introduction. A reader should be able to understand your overall argument and the support for it by reading only the introduction and conclusion.
+
+<!--chapter:end:02-format.Rmd-->
+
+# Software tools
+
+You should draft your thesis in RStudio using the bookdown package (which was also used to produce this document). This will allow you to generate a PDF document in addition to an HTML-based ebook that can include interactive elements. @xie2016bookdown includes full documentation for the bookdown package, and you can access it freely online [here](https://bookdown.org/yihui/bookdown/){target="_blank"}.
+
+You should maintain all code used to produce your thesis (both the document and any analysis) in a GitHub repository. I will offer feedback and suggest edits using GitHub issues and pull requests.
+
+To set up your thesis as a bookdown document within a GitHub repository, take the following steps:
+
+1. Create a new RStudio project by selecting "New project" from the File menu in RStudio, then "New Directory", the "Book project using bookdown." Name your project directory something descriptive that pertains to your thesis topic (i.e. do not name it "thesis").
+2. Install the `usethis` package, if it isn't already installed, then type `usethis::use_git()` in your RStudio console. Next, type `usethis::use_github()` in your console. This will create a local Git repository and an associated GitHub repository from your RStudio project.
+3. Open the file _bookdown.yml and add a line that says `output_dir: "docs"` at the end.
+4. In the Build tab of RStudio, click "Build Book."
+5. Go the the Git tab of RStudio. Stage, Commit, and Push your changes.
+6. Navigate to your GitHub repo on your web browser. Go to settings, then select "Pages" from the left sidebar. Under the "Source" heading, set the Branch as "main" and the folder as "/docs". Then click Save.
+
+<!--chapter:end:03-tools.Rmd-->
+
+# Advising meetings
+
+I will meet with the thesis students I am advising as a group (if I am advising multiple students) on a biweekly basis throughout Fall and Spring semesters of the thesis year. At the beginning of each semester, we will coordinate as a group to find a mutually convenient time for these recurring meetings. 
+
+Students should come to these meeting prepared to share their progress using two or three slides. These can be very simple. Preparation for these advising meetings should contribute to your progress on your thesis rather than being an additional task that comes at the expense of such progress.
+
+I am also available to meet with students outside of these regular advising meetings. You can sign up for a meeting with me using my [office hours scheduler](https://carole-voulgaris.youcanbook.me/){target="_blank"}.
+
+<!--chapter:end:04-meetings.Rmd-->
+
+# Key dates
+
+This section describes tasks you should complete as part of your thesis work with me and the approximate dates by which you should complete them.
+
+## Summer before thesis year
+
+The most important task for you to complete during the summer is to define a preliminary research question. You will have time to refine this question in the thesis prep course. You may find Chapter Three of The Craft of Research [@booth_chapter_2016] to useful in thinking about what makes a useful research question.
+
+I would also like you take some time over the summer to read _How to Fix Your Academic Writing Trouble_ [@mewburn2018ebook]. This is a very good introduction to academic writing. Even if you are a very good writer with extensive academic writing experience, I would like you to read this entire book so that we'll have a common foundation on which to build when I give you feedback on your writing.
+
+You should set up the GitHub repository with a bookdown template for your thesis and start getting comfortable editing documents in bookdown. You can find instructions on setting up your GitHub repository in the the [Software tools](#software-tools) section of this document. 
+
+Start assembling some initial sources for your literature review. Find at least five journal articles that are relevant to the research question you've identified and add them to the book.bib file in your thesis GitHub repository.
+
+Depending on your project, you may want to start gathering and analyzing some preliminary data the summer before your thesis year
+
+## Fall of your thesis year
+
+Over the course of fall semester, you will develop a **thesis proposal** as part of the thesis prep course. Much of the material you write for your thesis proposal can be incorporated into your thesis. You should add that material to the thesis draft in your GitHub repository as you go along. 
+
+Before the start of Spring semester, you should write a complete draft of the the **methods chapter** of your thesis and complete any necessary IRB applications.
+
+It would be wise to begin gathering and analyzing data during the fall semester. You don't need to wait until the end of thesis prep to start your research work.
+
+## Spring of your thesis year
+
+You will start spring semester having drafted your methods chapter. You will write most of your thesis during spring semester. In general, you should give me at least one week to review each chapter of your thesis. 
+
+* **At least one week before the Spring semester midterm review** (about ten weeks before the final thesis review), submit a draft of the results chapter to me.
+
+* **At least eight weeks before the final thesis review,** submit a draft of the discussion chapter to me.
+
+* **At least six weeks before the final thesis review,** submit a draft of the literature review chapter to me.
+
+* **At least four weeks before the final thesis review,** submit a conclusion chapter to me.
+
+* **At least two weeks before the final thesis review,** submit an introduction chapter to me.
+
+* **At least one week before the final thesis review,** submit a complete draft to me.
+
+<!--chapter:end:05-timeline.Rmd-->
+
