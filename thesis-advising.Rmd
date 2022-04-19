@@ -81,6 +81,12 @@ To set up your thesis as a bookdown document within a GitHub repository, take th
 5. Go the the Git tab of RStudio. Stage, Commit, and Push your changes.
 6. Navigate to your GitHub repo on your web browser. Go to settings, then select "Pages" from the left sidebar. Under the "Source" heading, set the Branch as "main" and the folder as "/docs". Then click Save.
 
+You may find it very useful to use Zotero to manage your citations. One of the biggest advantages of citation management software (like Zotero) is that it automatically generates formatted citations for you and lets you easily convert between citation formats in Microsoft Word or Google Docs. Bookdown has this functionality as well, so I won't insist on your using Zotero, but you might still choose to. For a Bookdown document, you'll keep a running list of your references in a file called book.bib. You'll use a format called BibTex for this. You can generate BibTeX citations to paste into the book.bib file in one of two ways:
+
+1. Search for the source in Google Scholar. Click on the "Cite" link under the entry for your source, and a window will appear with bibliographic entries in MLA, APA, Chicago, Harvard, and Vancouver formats. At the bottom of that window, click on the link that says "BibTeX". A block of BibTeX text will appear in your browser. Copy and paste that text to the book.bib file in your bookdown project directory.
+
+2. Save all your thesis sources to a folder in your Zotero library. Open Zotero and right-click on the folder where all your thesis sources are saved. Select "Export collection." In the "Export..." window that appears, select "BibTeX" as the format. Save the resulting file as book.bib in your bookdown project directory (overwriting the existing book.bib file).
+
 <!--chapter:end:03-tools.Rmd-->
 
 # Advising meetings
@@ -95,25 +101,25 @@ I am also available to meet with students outside of these regular advising meet
 
 # Key dates
 
-This section describes tasks you should complete as part of your thesis work with me and the approximate dates by which you should complete them.
+This section describes tasks you should complete as part of your thesis work with me and the approximate dates by which you should complete them. The dates described below are the latest dates by which I'd like for you to complete each milestone. Earlier is even better.
 
 ## Summer before thesis year
 
-The most important task for you to complete during the summer is to define a preliminary research question. You will have time to refine this question in the thesis prep course. You may find Chapter Three of The Craft of Research [@booth_chapter_2016] to useful in thinking about what makes a useful research question.
+The most important task for you to complete during the summer is to define a preliminary research question. You will have time to refine this question in the thesis prep course. You may find Chapter Three of The Craft of Research [@booth_chapter_2016] to be useful in thinking about what makes a useful research question.
 
 I would also like you take some time over the summer to read _How to Fix Your Academic Writing Trouble_ [@mewburn2018ebook]. This is a very good introduction to academic writing. Even if you are a very good writer with extensive academic writing experience, I would like you to read this entire book so that we'll have a common foundation on which to build when I give you feedback on your writing.
 
-You should set up the GitHub repository with a bookdown template for your thesis and start getting comfortable editing documents in bookdown. You can find instructions on setting up your GitHub repository in the the [Software tools](#software-tools) section of this document. 
+You should set up the GitHub repository with a bookdown template for your thesis and start getting comfortable editing documents in bookdown. You can find instructions on setting up your GitHub repository in the [Software tools](#software-tools) section of this document. 
 
-Start assembling some initial sources for your literature review. Find at least five journal articles that are relevant to the research question you've identified and add them to the book.bib file in your thesis GitHub repository.
+Start assembling some initial sources for your literature review. Find at least five journal articles that are relevant to the research question you've identified and add them to the book.bib file in your thesis GitHub repository. See the [Software tools](#software-tools) section of this document for details on how to add sources to book.bib.
 
-Depending on your project, you may want to start gathering and analyzing some preliminary data the summer before your thesis year
+Depending on your project, you may want to start gathering and analyzing some preliminary data the summer before your thesis year.
 
 ## Fall of your thesis year
 
 Over the course of fall semester, you will develop a **thesis proposal** as part of the thesis prep course. Much of the material you write for your thesis proposal can be incorporated into your thesis. You should add that material to the thesis draft in your GitHub repository as you go along. 
 
-Before the start of Spring semester, you should write a complete draft of the the **methods chapter** of your thesis and complete any necessary IRB applications.
+Before (possibly a good while before) the start of Spring semester, you should write a complete draft of the the **methods chapter** of your thesis and complete any necessary IRB applications.
 
 It would be wise to begin gathering and analyzing data during the fall semester. You don't need to wait until the end of thesis prep to start your research work.
 

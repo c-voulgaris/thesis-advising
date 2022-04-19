@@ -1,24 +1,24 @@
 # Key dates
 
-This section describes tasks you should complete as part of your thesis work with me and the approximate dates by which you should complete them.
+This section describes tasks you should complete as part of your thesis work with me and the approximate dates by which you should complete them. The dates described below are the latest dates by which I'd like for you to complete each milestone. Earlier is even better.
 
 ## Summer before thesis year
 
-The most important task for you to complete during the summer is to define a preliminary research question. You will have time to refine this question in the thesis prep course. You may find Chapter Three of The Craft of Research [@booth_chapter_2016] to useful in thinking about what makes a useful research question.
+The most important task for you to complete during the summer is to define a preliminary research question. You will have time to refine this question in the thesis prep course. You may find Chapter Three of The Craft of Research [@booth_chapter_2016] to be useful in thinking about what makes a useful research question.
 
 I would also like you take some time over the summer to read _How to Fix Your Academic Writing Trouble_ [@mewburn2018ebook]. This is a very good introduction to academic writing. Even if you are a very good writer with extensive academic writing experience, I would like you to read this entire book so that we'll have a common foundation on which to build when I give you feedback on your writing.
 
-You should set up the GitHub repository with a bookdown template for your thesis and start getting comfortable editing documents in bookdown. You can find instructions on setting up your GitHub repository in the the [Software tools](#software-tools) section of this document. 
+You should set up the GitHub repository with a bookdown template for your thesis and start getting comfortable editing documents in bookdown. You can find instructions on setting up your GitHub repository in the [Software tools](#software-tools) section of this document. 
 
-Start assembling some initial sources for your literature review. Find at least five journal articles that are relevant to the research question you've identified and add them to the book.bib file in your thesis GitHub repository.
+Start assembling some initial sources for your literature review. Find at least five journal articles that are relevant to the research question you've identified and add them to the book.bib file in your thesis GitHub repository. See the [Software tools](#software-tools) section of this document for details on how to add sources to book.bib.
 
-Depending on your project, you may want to start gathering and analyzing some preliminary data the summer before your thesis year
+Depending on your project, you may want to start gathering and analyzing some preliminary data the summer before your thesis year.
 
 ## Fall of your thesis year
 
 Over the course of fall semester, you will develop a **thesis proposal** as part of the thesis prep course. Much of the material you write for your thesis proposal can be incorporated into your thesis. You should add that material to the thesis draft in your GitHub repository as you go along. 
 
-Before the start of Spring semester, you should write a complete draft of the the **methods chapter** of your thesis and complete any necessary IRB applications.
+Before (possibly a good while before) the start of Spring semester, you should write a complete draft of the the **methods chapter** of your thesis and complete any necessary IRB applications.
 
 It would be wise to begin gathering and analyzing data during the fall semester. You don't need to wait until the end of thesis prep to start your research work.
 
