@@ -141,3 +141,11 @@ You will start spring semester having drafted your methods chapter. You will wri
 
 <!--chapter:end:05-timeline.Rmd-->
 
+# Concluding thoughts
+
+There is a common saying that "The best thesis is a finished thesis." My goal is for you to finish your thesis, and that will inevitably mean that I will occasionally encourage you to drop a line of inquiry that you find interesting and important, or to stop working on part of your project and move on, even when you know it isn't perfect yet.
+
+Ideally your thesis marks the _beginning_ of a journey that will span the rest of your career. After my time as your thesis advisor concludes, I will continue to follow your career with interest, and I'm sure I will see your thinking on the questions that motivated your thesis research evolve over time.
+
+<!--chapter:end:06-conclusion.Rmd-->
+
